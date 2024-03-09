@@ -1,49 +1,5 @@
 import { defineConfig, type DefaultTheme } from "vitepress"
 
-// const zhSearch: DefaultTheme.AlgoliaSearchOptions["locales"] = {
-// 	zh: {
-// 		placeholder: "搜索文档",
-// 		translations: {
-// 			button: {
-// 				buttonText: "搜索文档",
-// 				buttonAriaLabel: "搜索文档",
-// 			},
-// 			modal: {
-// 				searchBox: {
-// 					resetButtonTitle: "清除查询条件",
-// 					resetButtonAriaLabel: "清除查询条件",
-// 					cancelButtonText: "取消",
-// 					cancelButtonAriaLabel: "取消",
-// 				},
-// 				startScreen: {
-// 					recentSearchesTitle: "搜索历史",
-// 					noRecentSearchesText: "没有搜索历史",
-// 					saveRecentSearchButtonTitle: "保存至搜索历史",
-// 					removeRecentSearchButtonTitle: "从搜索历史中移除",
-// 					favoriteSearchesTitle: "收藏",
-// 					removeFavoriteSearchButtonTitle: "从收藏中移除",
-// 				},
-// 				errorScreen: {
-// 					titleText: "无法获取结果",
-// 					helpText: "你可能需要检查你的网络连接",
-// 				},
-// 				footer: {
-// 					selectText: "选择",
-// 					navigateText: "切换",
-// 					closeText: "关闭",
-// 					searchByText: "搜索提供者",
-// 				},
-// 				noResultsScreen: {
-// 					noResultsText: "无法找到相关结果",
-// 					suggestedQueryText: "你可以尝试查询",
-// 					reportMissingResultsText: "你认为该查询应该有结果？",
-// 					reportMissingResultsLinkText: "点击反馈",
-// 				},
-// 			},
-// 		},
-// 	},
-// }
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	lang: "zh-Hans",
@@ -164,16 +120,18 @@ export default defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
 	return [
-		{ text: "指南", link: "/guide/手机怎么控", activeMatch: "/guide/" },
+      // { text: "首页", link: "/", activeMatch: "/" },
+		{ text: "指南", link: "/guide/点播节目", activeMatch: "/guide/" },
 		{
 			text: "服务",
+         link: "/service/为什么要用", 
 			activeMatch: "/service/",
-			items: [
-				{ text: "系统升级", link: "/service/系统升级" },
-				{ text: "系统测试", link: "/service/系统测试" },
-				{ text: "系统托管", link: "/service/系统托管" },
-				{ text: "设计监理", link: "/service/设计监理" },
-			],
+			// items: [
+			// 	{ text: "互动点播系统", link: "/service/为什么要用" },
+			// 	{ text: "免费服务", link: "/service/信息更新" },
+			// 	{ text: "付费服务", link: "/service/喷泉脚本" },
+			// 	{ text: "试运营", link: "/service/试运营" },
+			// ],
 		},
 		// {
 		// 	text: "联系",
@@ -200,56 +158,73 @@ function nav(): DefaultTheme.NavItem[] {
 
 function sidebarGuide(): DefaultTheme.SidebarItem[] {
 	return [
-		{
-			text: "问最多的问题：",
+      {
+			text: "安装手机客户端",
 			collapsed: false,
 			items: [
-				// { text: "指南", link: "/guide/指南" },
-				{ text: "手机怎么控？", link: "手机怎么控" },
-				{ text: "喷泉怎么演？", link: "喷泉怎么演" },
-				{ text: "什么喷泉才能被手机控制？", link: "什么喷泉才能被手机控制" },
-				{ text: "还有什么玩法？", link: "还有什么玩法" },
+            { text: "输入网址", link: "输入网址" },
+				{ text: "扫描二维码", link: "扫描二维码" },
 			],
 		},
 		{
-			text: "手机点播操作：",
+			text: "基本功能：",
 			collapsed: false,
 			items: [
-				{ text: "搜索小程序", link: "搜索小程序" },
-				{ text: "打开小程序", link: "打开小程序" },
-				{ text: "预订节目", link: "预订节目" },
+				{ text: "点播节目", link: "点播节目" },
+				{ text: "与喷泉互动", link: "与喷泉互动" },
+				{ text: "插播留言", link: "插播留言" }
 			],
 		},
 		{
-			text: "更多玩法：",
+			text: "高级功能：",
 			collapsed: false,
 			items: [
-				{ text: "进阶玩法", link: "进阶玩法" },
-				{ text: "常见问题", link: "常见问题" },
+            { text: "自制媒体上传", link: "自制媒体上传" },
+				{ text: "自制广告", link: "自制广告" },
+				{ text: "自制通知、启示", link: "自制通知启示" },
+            { text: "活动专场", link: "活动专场" },
 			],
 		},
+		{
+			text: "其他：",
+			collapsed: true,
+			items: [
+            { text: "问与答", link: "问与答" },
+				{ text: "互动进阶", link: "互动进阶" }
+			],
+		}
 	]
 }
 
 function sidebarService(): DefaultTheme.SidebarItem[] {
 	return [
-		{
-			text: "系统升级：",
+      {
+			text: "互动点播系统：",
 			collapsed: false,
 			items: [
-				{ text: "快速评估", link: "快速评估" },
-				{ text: "前期初试", link: "前期初试" },
-				{ text: "平行部署", link: "平行部署" },
-				{ text: "验收运营", link: "验收运营" },
+				{ text: "为什么要用？", link: "为什么要用" },
+				{ text: "如何接入？", link: "如何接入" },
+				{ text: "试运营", link: "试运营" },
 			],
 		},
 		{
-			text: "其他服务：",
+			text: "免费服务：",
 			collapsed: false,
 			items: [
-				{ text: "系统测试", link: "系统测试" },
-				{ text: "系统托管", link: "系统托管" },
-				{ text: "设计监理", link: "设计监理" },
+				{ text: "信息更新", link: "信息更新" },
+				{ text: "初步评估", link: "初步评估" },
+				{ text: "音乐点播", link: "音乐点播" },
+				{ text: "测试验证", link: "测试验证" },
+			],
+		},
+		{
+			text: "付费服务：",
+			collapsed: true,
+			items: [
+				{ text: "喷泉脚本", link: "喷泉脚本" },
+            { text: "实时互动子系统", link: "实时互动子系统" },
+				{ text: "无人值守子系统", link: "无人值守子系统" },
+				{ text: "信息插播子系统", link: "信息插播子系统" }
 			],
 		},
 	]
