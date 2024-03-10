@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as t,a4 as i}from"./chunks/framework.BAAGAbwm.js";const f=JSON.parse('{"title":"喷泉脚本","description":"","frontmatter":{},"headers":[],"relativePath":"service/喷泉脚本.md","filePath":"service/喷泉脚本.md"}'),l={name:"service/喷泉脚本.md"},r=i("",7),o=[r];function s(_,c,n,h,d,u){return t(),e("div",null,o)}const p=a(l,[["render",s]]);export{f as __pageData,p as default};

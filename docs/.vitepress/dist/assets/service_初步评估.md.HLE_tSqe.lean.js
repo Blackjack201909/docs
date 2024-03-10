@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a4 as i}from"./chunks/framework.BAAGAbwm.js";const f=JSON.parse('{"title":"初步评估","description":"","frontmatter":{},"headers":[],"relativePath":"service/初步评估.md","filePath":"service/初步评估.md"}'),l={name:"service/初步评估.md"},o=i("",3),r=[o];function _(s,c,n,d,h,m){return t(),a("div",null,r)}const u=e(l,[["render",_]]);export{f as __pageData,u as default};

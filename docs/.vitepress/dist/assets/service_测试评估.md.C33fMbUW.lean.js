@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as i,a4 as l}from"./chunks/framework.BAAGAbwm.js";const f=JSON.parse('{"title":"合作模式","description":"","frontmatter":{},"headers":[],"relativePath":"service/测试评估.md","filePath":"service/测试评估.md"}'),t={name:"service/测试评估.md"},r=l("",7),o=[r];function s(_,c,n,h,d,u){return i(),e("div",null,o)}const p=a(t,[["render",s]]);export{f as __pageData,p as default};

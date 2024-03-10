@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a4 as i}from"./chunks/framework.BAAGAbwm.js";const f=JSON.parse('{"title":"测试验证","description":"","frontmatter":{},"headers":[],"relativePath":"service/测试验证.md","filePath":"service/测试验证.md"}'),l={name:"service/测试验证.md"},r=i("",5),o=[r];function _(s,c,n,d,h,u){return t(),a("div",null,o)}const p=e(l,[["render",_]]);export{f as __pageData,p as default};

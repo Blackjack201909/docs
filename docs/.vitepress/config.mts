@@ -7,7 +7,7 @@ export default defineConfig({
 
 	description: "https://penquan.3210202.xyz",
 
-	lastUpdated: true,
+	lastUpdated: false,
 	cleanUrls: true,
 	metaChunk: true,
 
@@ -24,7 +24,7 @@ export default defineConfig({
 	},
 
 	sitemap: {
-		hostname: "https://vitepress.dev",
+		hostname: "https://penquan.3210202.xyz",
 		transformItems(items) {
 			return items.filter(item => !item.url.includes("migration"))
 		},
@@ -78,10 +78,10 @@ export default defineConfig({
 			}
 		},
 
-		editLink: {
-			pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
-			text: "在 GitHub 上编辑此页面",
-		},
+		// editLink: {
+		// 	pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+		// 	text: "在 GitHub 上编辑此页面",
+		// },
 
 		docFooter: {
 			prev: "上一页",
@@ -101,13 +101,12 @@ export default defineConfig({
 		},
 
 		footer: {
-			message:
-				'深圳示联科技有限公司<a href="https://github.com/vuejs/vitepress/blob/main/LICENSE"> </a>',
-			copyright: `Copyright © 2017-${new Date().getFullYear()} <a href="https://github.com/yyx990803"></a>`,
+			message: '深圳示联科技有限公司',
+			copyright: `Copyright © 2017-${new Date().getFullYear()}`,
 		},
 
-		socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
-		carbonAds: { code: "CEBDT27Y", placement: "vuejsorg" },
+		// socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
+		// carbonAds: { code: "CEBDT27Y", placement: "vuejsorg" },
 
 		// langMenuLabel: '多语言',
 		returnToTopLabel: "回到顶部",
